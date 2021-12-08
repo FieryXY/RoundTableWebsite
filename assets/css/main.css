@@ -1,0 +1,59 @@
+.menuIcon {
+  position: fixed;
+  background:  #88CDDF;
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 25%;
+  top: 1.5rem;
+  left: 1.5rem;
+  transition: 0.5s;
+}
+
+.menuIcon:hover {
+  background-color: #70b1c2;
+}
+
+.navBar {
+  z-index: 1;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 0%;
+  height: 100%;
+  background:  #88CDDF;
+  opacity: 0.8;
+  transition: 0.5s;
+  padding-top: 2.1rem;
+}
+
+.navBar a {  
+  color: #363636;
+  font-family: Helvetica;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.menubtn {
+  display: block;
+  padding: 4.2rem 0.5rem 4.2rem 2.2rem;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 1.6rem;
+}
+
+.menubtn:hover {
+  background-color: #70b1c2;
+}
+
+.closebtnDiv {
+  margin-bottom: 2.8rem;
+}
+
+.closebtn {
+  position: absolute;
+  display: inline;
+  right: 1.75rem;
+  font-size: 2.8rem;
+  text-align: right;
+}
