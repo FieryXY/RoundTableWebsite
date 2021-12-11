@@ -1,19 +1,49 @@
 <html>
 <header>
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <script src="/assets/js/nav.js"></script>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type = "text/css" href="assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/homepage.style.css">
+  <title>The Round Table</title>
+  <script src="assets/js/nav.js"></script>
 </header>
-
-<body>
-    <span class="menuIcon" onclick="riseMenu()"></span>
-    <div class="navBar" id="homeNavBar">
-        <div class="closebtnDiv">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
-        </div>
-        <a href="index.html" class="menubtn">About Us</a>
-        <a href="howWork.html" class="menubtn">How it Works</a>
-        <a href="repSignUp.html" class="menubtn">Become a Representative</a>
+<body class="background">
+  <span class="menuIcon" onclick="riseMenu()"></span>
+  <div class="navBar" id="homeNavBar"> 
+    <div class="closebtnDiv">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
     </div>
+    <a href="index.html" class="menubtn">About Us</a>
+    <a href="howWork.html" class="menubtn">How it Works</a>
+    <a href="repSignUp.html" class="menubtn">Become a Representative</a>
+  </div>
+   <!-- Layout for header -->
+   <div class = "header">
+    <img src="assets/resources/square_placeholder.jpg" alt="logo" class = "header_logo">
+    <div class = "header_text">
+      <h1>The Round Table</h1>
+    </div>
+  </div>
+
+  <!-- Layout for central box -->
+	<div id="centralBox" class="row column">
+    <!-- Layout for the top description section -->
+		<div class="maininfo description top">
+      <img src="assets/resources/square_placeholder.jpg" alt="placeholder" class = "maininfo img left">
+      <p class="maininfo description_text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non rhoncus sapien, eget tempus magna. Ut interdum vestibulum nibh, in fermentum metus eleifend eu. Ut eget augue elit. Quisque tortor ante, commodo vitae lorem ut, tincidunt ornare ante. Morbi non sem felis. Aliquam erat volutpat. Phasellus vehicula leo justo, sit amet posuere ligula ullamcorper in. Quisque dignissim mauris nisl, a pharetra mi posuere at. Curabitur mattis, mi ut fermentum vulputate, mauris dui semper tortor, quis tristique
+      </p>
+    </div>
+
+    <!-- Layout for the bottom description section -->
+    <div class="maininfo description bottom">
+      <p class = "maininfo description_text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non rhoncus sapien, eget tempus magna. Ut interdum vestibulum nibh, in fermentum metus eleifend eu. Ut eget augue elit. Quisque tortor ante, commodo vitae lorem ut, tincidunt ornare ante. Morbi non sem felis. Aliquam erat volutpat. Phasellus vehicula leo justo, sit amet posuere ligula ullamcorper in. Quisque dignissim mauris nisl, a pharetra mi posuere at. Curabitur mattis, mi ut fermentum vulputate, mauris dui semper tortor, quis tristique
+      </p>
+      <img src="assets/resources/square_placeholder.jpg" alt="placeholder" class = "maininfo img right">
+    </div>
+	</div>
+
 </body>
 
 </html>
