@@ -48,6 +48,8 @@
   
     display: flex;
     flex-direction: row;
+    opacity: 0;
+    transition: opacity 1s;
   }
   
   /* Sets margins for the top description segment */
@@ -134,7 +136,7 @@
       margin-left: 0px;
       margin-right: 0px;
     }
-    
+
     .maininfo.description {
       flex-direction: column;
       justify-content: center;
