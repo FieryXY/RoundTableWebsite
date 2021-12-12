@@ -1,12 +1,46 @@
-.menuIcon {
+.navContainer {
     position: fixed;
-    background: #88CDDF;
     width: 5.5rem;
     height: 5.5rem;
+    top: 1.5rem;
+    left: 1.5rem;
+}
+
+.menuIcon {
+    background: #88CDDF;
+    width: 100%;
+    height: 100%;
     border-radius: 25%;
     top: 1.5rem;
     left: 1.5rem;
     transition: 0.5s;
+}
+
+.hamburger {
+    position: absolute;
+    left: 20%;
+    width: 60%;
+    height: 12%;
+    bottom: 24%;
+    background-color: white;
+}
+
+.hamburger2 {
+    position: absolute;
+    left: 20%;
+    width: 60%;
+    height: 12%;
+    bottom: 44%;
+    background-color: white;
+}
+
+.hamburger3 {
+    position: absolute;
+    left: 20%;
+    width: 60%;
+    height: 12%;
+    bottom: 64%;
+    background-color: white;
 }
 
 .menuIcon:hover {
@@ -14,17 +48,17 @@
 }
 
 .navBar {
-  z-index: 1;
-  overflow-x: hidden;
-  top: 0;
-  left: 0;
-  position: fixed;
-  width: 0%;
-  height: 100%;
-  background:  #88CDDF;
-  opacity: 1;
-  transition: 0.5s;
-  padding-top: 2.1rem;
+    z-index: 1;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 0%;
+    height: 100%;
+    background: #88CDDF;
+    opacity: 1;
+    transition: 0.5s;
+    padding-top: 2.1rem;
 }
 
 .navBar a {
