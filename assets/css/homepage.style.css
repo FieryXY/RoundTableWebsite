@@ -1,185 +1,181 @@
+/* ---------- BASIC CSS STYLING ---------- */
+
 /* Adjusts the margins of elements and how they position */
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
   
-  /* Sets background color */
-  .background {
-    background-color: #265C94;
-    background-attachment: fixed;
-  }
+/* Sets background color */
+.background {
+  background-color: #265C94;
+  background-attachment: fixed;
+}
   
-  /* Centers the header */
-  .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Centers the header */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
-    margin: -10px;
-  }
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
   
-  /* Stylizes the header text*/
-  .header_text {
-    display: inline-block;
-    color: #D0D0D0;
-    font-family: sans-serif;
-    font-size: 40px;
-    text-align: center;
+/* Stylizes the header text*/
+.header_text {
+  display: inline-block;
+  color: #D0D0D0;
+  font-family: sans-serif;
+  font-size: 40px;
+  text-align: center;
     
-    margin-left: 10px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+  
+/* Sets basic properties for logo */
+.header_logo{
+  display: inline-block;
+  
+  width: 60px;
+  height: 60px;
+  
+  margin-left: 20px;
+  margin-right: 10px;
+}
+  
+/* Sets some basic properties for each description segment on the home page */
+.maininfo.description {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
+  display: flex;
+  flex-direction: row;
+  opacity: 0;
+  transition: opacity 1s;
+}
+  
+/* Sets margins for the top description segment */
+.maininfo.description.left_side {
+  margin-left: 50px;
+  margin-right: 25%;
+}
+  
+/* Sets margins for the bottom description segment */
+.maininfo.description.right_side {
+  margin-left: 25%;
+  margin-right: 50px;
+}
+  
+.maininfo.description_text {
+  font-size: 16px;
+  font-family: Arial;
+  color: black;
+  text-align: justify;
+  
+  display:flex;
+}
+  
+/* Sets basic properties for images next to description segments */
+.maininfo.img {
+  width: 100px;
+  height: 100px;
+}
+  
+/* Makes image position itself to the left of description segment */
+.maininfo.img.left {
+  display: flex;
+  margin-right:30px; 
+}
+  
+/* Makes image position itself to the right of description segment */
+.maininfo.img.right {
+  display: flex;
+  margin-left:30px; 
+}
+  
+/* Sets the style for the main boxes at the center of the homepage */
+.column {
+  background-color:#D0D0D0;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 50px;
+  padding: 10px;
+  border-radius: 50px;
+}
+ 
+/* Does something, not quite sure what. Apparently important for columns though */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ---------- id & JS RELATED STYLING ---------- */
+
+/* Ensures smooth transitions when Nav Bar opens and closes*/
+#siteContent, #header {
+  transition-property: margin-left;
+  transition-duration: 0.5s;
+}
+
+/* ---------- SMALL-SCREEN SIZE READJUSTMENTS ---------- */
+  
+/* If screen resolution is too narrow, rearrange the header elements */
+@media (max-width: 800px) {
+  .header{
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  
+  .header_text {
+    font-size: 5vw;
+    margin-left: 20px;
     margin-right: 20px;
   }
   
-  /* Sets basic properties for logo */
-  .header_logo{
-    display: inline-block;
+  .header_logo {
+    width: 20vw;
+    height: 20vw;
   
-    width: 60px;
-    height: 60px;
-  
-    margin-left: 20px;
-    margin-right: 10px;
+    margin-bottom: -15px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
-  
-  /* Sets some basic properties for each description segment on the home page */
+
   .maininfo.description {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  
-    display: flex;
-    flex-direction: row;
-    opacity: 0;
-    transition: opacity 1s;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
-  /* Sets margins for the top description segment */
-  .maininfo.description.top {
+  .maininfo.description.left_side {
     margin-left: 50px;
-    margin-right: 25%;
-  }
-  
-  /* Sets margins for the bottom description segment */
-  .maininfo.description.bottom {
-    margin-left: 25%;
     margin-right: 50px;
   }
   
+  .maininfo.description.right_side {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
   .maininfo.description_text {
-    font-size: 16px;
-    font-family: Arial;
-    color: black;
-    text-align: justify;
-  
-    display:flex;
+    order: 2;
   }
   
-  /* Sets basic properties for images next to description segments */
-  .maininfo.img {
-    width: 100px;
-    height: 100px;
-  }
-  
-  /* Makes image position itself to the left of description segment */
   .maininfo.img.left {
-    display: flex;
-    margin-right:30px; 
+    order: 1;
+    margin-right: 0px; 
   }
   
-  /* Makes image position itself to the right of description segment */
   .maininfo.img.right {
-    display: flex;
-    margin-left:30px; 
-  }
-
-  /* Ensures smooth transitions when Nav Bar opens and closes*/
-  #siteContent {
-    transition-property: margin-left;
-    transition-duration: 0.5s;
-    margin-left: 0%;
-  }
-
-  #siteContent.adjusted{
-    margin-left: 20%;
+    order: 1;
+    margin-left: 0px; 
   }
   
-  /* Sets the style for the main boxes at the center of the homepage */
   .column {
     background-color:#D0D0D0;
-    /*width: 80%;*/
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 30rem;
-    padding: 10px;
-    border-radius: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
- 
-  /* Does something, not quite sure what. Apparently important for columns though */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* If screen resolution is too narrow, rearrange the header elements */
-  @media (max-width: 800px) {
-    .header{
-      flex-direction: column;
-      margin-top: 40px;
-    }
-  
-    .header_text {
-      font-size: 5vw;
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-  
-    .header_logo {
-      width: 20vw;
-      height: 20vw;
-  
-      margin-bottom: -15px;
-      margin-left: 0px;
-      margin-right: 0px;
-    }
-
-    .maininfo.description {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    .maininfo.description.top {
-      margin-left: 50px;
-      margin-right: 50px;
-    }
-  
-    .maininfo.description.bottom {
-      margin-left: 50px;
-      margin-right: 50px;
-    }
-  
-    .maininfo.img.left {
-      order: 1;
-      margin-right: 0px; 
-    }
-  
-    .maininfo.img.right {
-      order: 1;
-      margin-left: 0px; 
-    }
-  
-    .maininfo.description_text {
-      order: 2;
-    }
-  
-    .column {
-      background-color:#D0D0D0;
-      width: 90%;
-      margin-left: 5%;
-      margin-right: 5%;
-    }
-
-    #siteContent.adjusted{
-        margin-left: 0%;
-      }
-  }
+}
