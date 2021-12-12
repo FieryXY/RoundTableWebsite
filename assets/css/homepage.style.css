@@ -88,18 +88,22 @@
     display: flex;
     margin-left:30px; 
   }
+
+  /* Ensures smooth transitions when Nav Bar opens and closes*/
+  #siteContent {
+    transition-property: margin-left;
+    transition-duration: 0.5s;
+  }
   
-  /* Sets the style for the main box at the center of the homepage */
+  /* Sets the style for the main boxes at the center of the homepage */
   .column {
     background-color:#D0D0D0;
     /*width: 80%;*/
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 30rem;
     padding: 10px;
     border-radius: 50px;
-
-    transition-property: margin-left;
-    transition-duration: 0.5s;
   }
  
   /* Does something, not quite sure what. Apparently important for columns though */
