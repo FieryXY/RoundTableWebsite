@@ -4,6 +4,7 @@
     height: 5.5rem;
     top: 1.5rem;
     left: 1.5rem;
+    border-radius: 25%;
 }
 
 .menuIcon {
@@ -23,6 +24,7 @@
     height: 12%;
     bottom: 24%;
     background-color: white;
+    transition: 0.5s;
 }
 
 .hamburger2 {
@@ -32,6 +34,7 @@
     height: 12%;
     bottom: 44%;
     background-color: white;
+    transition: 0.5s;
 }
 
 .hamburger3 {
@@ -41,9 +44,26 @@
     height: 12%;
     bottom: 64%;
     background-color: white;
+    transition: 0.5s;
 }
 
 .menuIcon:hover {
+    background-color: #70b1c2;
+}
+
+.navContainer:hover .hamburger {
+    background-color: rgb(207, 207, 207);
+}
+
+.navContainer:hover .hamburger2 {
+    background-color: rgb(207, 207, 207);
+}
+
+.navContainer:hover .hamburger3 {
+    background-color: rgb(207, 207, 207);
+}
+
+.navContainer:hover .menuIcon {
     background-color: #70b1c2;
 }
 
