@@ -95,6 +95,11 @@
   #siteContent {
     transition-property: margin-left;
     transition-duration: 0.5s;
+    margin-left: 0%;
+  }
+
+  #siteContent.adjusted{
+    margin-left: 20%;
   }
   
   /* Sets the style for the main boxes at the center of the homepage */
@@ -173,4 +178,8 @@
       margin-left: 5%;
       margin-right: 5%;
     }
+
+    #siteContent.adjusted{
+        margin-left: 0%;
+      }
   }

@@ -1,11 +1,13 @@
 const centralBoxes = document.getElementsByClassName("column");
 
 function riseMenu() {
-  document.getElementById("homeNavBar").style.width = "20%";
-  document.getElementById("siteContent").style.marginLeft = "20%";
+  document.getElementById("homeNavBar").classList.remove("closed");
+  document.getElementById("homeNavBar").classList.add("open");
+  document.getElementById("siteContent").classList.add("adjusted");
 }
 
 function closeMenu() {
-  document.getElementById("homeNavBar").style.width = "0%";
-  document.getElementById("siteContent").style.marginLeft = "0%";
+  document.getElementById("homeNavBar").classList.remove("open");
+  document.getElementById("homeNavBar").classList.add("closed");
+  document.getElementById("siteContent").classList.remove("adjusted");
 }
