@@ -4,12 +4,14 @@
 	<meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type = "text/css" href="assets/css/main.css">
   <link rel="stylesheet" type="text/css" href="assets/css/homepage.style.css">
-  <title>The Round Table</title>
+  <div class="titleDiv">
+    <title>The Round Table</title>
+  </div>
   <script src="assets/js/nav.js"></script>
-  <script src="assets/js/home.js" defer></script>
+  <script src="assets/js/intersection.js" defer></script>
 </header>
 
-<body class="background">
+<body class="background" onload="setupObserver()">
     <div class="navContainer">
         <div class="menuIcon" onclick="riseMenu()"></div>
         <div class="hamburger" onclick="riseMenu()"></div>
