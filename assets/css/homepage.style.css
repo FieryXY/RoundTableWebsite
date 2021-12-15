@@ -98,14 +98,10 @@
   /* ---------- id & JS RELATED STYLING ---------- */
   
   /* Ensures smooth transitions when Nav Bar opens and closes*/
-#siteContent, #header {
+#siteContent {
   transition-property: margin-left;
   transition-duration: 0.5s;
   margin-left: 0%;
-}
-
-#header.adjusted{
-  margin-left: 20%;
 }
 
 #siteContent.adjusted{
