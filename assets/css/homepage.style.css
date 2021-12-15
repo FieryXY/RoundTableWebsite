@@ -5,9 +5,9 @@
   
   /* Sets background color */
   .background {
-    background-color: #265C94;
+
     background-attachment: fixed;
-    background-image: url("/RoundTableWebsite/assets/resources/background-image.jpg");
+    background-image: url("../resources/background-image.jpg");
   }
   
   /* Centers the header */
