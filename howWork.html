@@ -10,7 +10,7 @@
         </div>
         <script src="assets/js/nav.js"></script>
         <script src="assets/js/intersection.js" defer></script>
-        <script src="assets/js/tabBoxes.js"></script>
+        <script src="assets/js/tabBoxes.js" defer></script>
       </header>
       <body class="background" onload="setupObserver()">
         <div class="navContainer">
@@ -49,9 +49,10 @@
             </div>
             <!-- Meeting Structure-->
             <div  class="row column tabBox">
+                <h3 class="maininfo description_text" style="text-align: center;display:block;margin-bottom:1rem">Learn more about the Structure</h3>
                 <div class="horizontalButtons">
-                    <span class="flexButton" onclick="weeklyButton()">Weekly</span>
-                    <span class="flexButton" onclick="monthlyButton()">Monthly</span>
+                    <span class="flexButton" onclick="weeklyButton()" id="weeklyButton">Weekly</span>
+                    <span class="flexButton" onclick="monthlyButton()" id="monthlyButton">Monthly</span>
                 </div>
                 <div id="structureContent">
                     <div id="weeklyMeetingStructure" class="structureContentChild hiddenStructure">
@@ -94,8 +95,23 @@
                     </div>
                 </div>    
             </div>
+            
             <!-- Representative Information-->
-            <div  class="row column"></div>
+            <div  class="row column tabBox" onload="setupRepButtons()">
+                <h3 class="maininfo description_text" style="text-align: center;display:block;margin-bottom:1rem">Learn more about the Representatives</h3>
+                <div id="repButtons" class="horizontalButtons">
+
+                </div>  
+                <div id="repContent" style="display:none">
+                    <div>
+                        <div>
+                            <img id="rep_img" src="assets/resources/square_placeholder.jpg" alt="placeholder" class="repinfo img"> 
+                        </div>
+                        <p class="repinfo description_text" id="rep_description">
+                            
+                        </p>
+                </div>
+            </div>
         </div>
       </body>
 </html>
