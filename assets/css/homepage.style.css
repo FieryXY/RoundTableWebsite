@@ -21,12 +21,6 @@
     margin-bottom: 40px;
     font-size: 40px;
   }
-
-  .header.follow {
-    position: fixed;
-    height: 10%;
-    font-size: 20px;
-  }
   
   /* Stylizes the header text*/
   .header_text {
