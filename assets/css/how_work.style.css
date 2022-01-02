@@ -80,8 +80,8 @@
     overflow-x: hidden;
     position: absolute;
     left: 0;
-   background: blue;
-   color: white;
+   background: rgb(59, 171, 246);
+   color: #082c65;
    height: 100%;
    width: 100%;
    transition: width 1s;
