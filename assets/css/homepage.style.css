@@ -189,3 +189,38 @@
         margin-left: 0%;
       }
   }
+
+
+
+    /*   Club Description CSS    */
+
+    #clubIntroduction {
+        /*  Add if needed changes  */
+    }
+    
+    .fboxcontainer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .fboxcenter {
+        justify-content: center;
+    }
+
+    .clubBox {
+        display: inline-block;
+        margin: 10px;
+        text-align: justify;
+        width: 25%;
+        height: 80%;
+    }
+
+    .clubcBox img {
+        max-width: 100%;
+        max-height: 100%;
+        display: block
+    }
+
+    
+
+
