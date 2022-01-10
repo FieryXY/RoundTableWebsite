@@ -7,7 +7,6 @@
     border-radius: 25%;
     z-index: 9;
 }
-
 .menuIcon {
     background: #88CDDF;
     width: 100%;
@@ -82,6 +81,7 @@
     padding-top: 2.1rem;
 }
 
+
 .navBar.closedNav {
   width: 0%;
 }
@@ -92,7 +92,7 @@
 
 .navBar a {
     color: #363636;
-    font-family: Helvetica;
+    font-family: Helvetica, serif;
     transition: 0.3s;
     text-decoration: none;
 }
@@ -121,8 +121,121 @@
     font-size: 2.6vw;
     text-align: right;
 }
+.dropbtn {
+    background-color: #88CDDF;
+    color: #363636;
+    font-family: Helvetica, serif;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    display: block;
+    padding: 4.2rem 0.5rem 4.2rem 2.2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1.3vw;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #70b1c2;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #88CDDF;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #70b1c2;
+}
+
+.show {
+    display: block;
+}
+
+/* Sets background image */
+.background {
+    background-attachment: fixed;
+    background-image: url("../resources/background-image.jpg");
+    background-size: cover;
+}
+
+/* Centers the header */
+.header {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+  
+/* Stylizes the header text*/
+.header_text {
+    display: inline-block;
+    color: #D0D0D0;
+    font-family: sans-serif;
+    font-size: 1em;
+    text-align: center;
+    
+    margin-left: 10px;
+    margin-right: 20px;
+    
+}
+  
+/* Sets basic properties for logo */
+.header_logo{
+    display: inline-block;
+  
+    width: 1.5em;
+    height: 1.5em;
+  
+    margin-left: 0.5em;
+    margin-right: 0.25em;
+}
 
 @media (max-width: 800px) {
+  .header{
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  
+  .header_text {
+    font-size: 5vw;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .header_logo {
+    width: 20vw;
+    height: 20vw;
+  
+    margin-bottom: -15px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 60rem) {
 
   .menubtn {
     font-size: 5vw;
@@ -130,5 +243,8 @@
 
   .navBar.open {
     width: 100%
+  }
+  .dropbtn {
+    font-size: 5vw;
   }
 }
