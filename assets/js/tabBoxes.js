@@ -12,7 +12,7 @@ function monthlyButton() {
     document.getElementById("monthlyButton").classList.add("selected");
 }
 
-function setupRepButtons() {
+/*function setupRepButtons() {
     let rootElement = document.getElementById("repButtons");
     fetch("./assets/resources/reps.json")
     .then(response => response.json())
@@ -44,4 +44,4 @@ function repClick(clicked, description, image) {
     else document.getElementById("rep_img").src = "assets/resources/square_placeholder.jpg";
 }
 
-window.addEventListener("load", setupRepButtons);
+window.addEventListener("load", setupRepButtons);*/

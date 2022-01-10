@@ -57,6 +57,7 @@
 
 /* Sets the style for the main boxes at the center of the homepage */
 .column {
+    display: block;
     width:30%;
     background-color: #D0D0D0;
     float:left;

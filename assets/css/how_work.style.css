@@ -125,4 +125,8 @@
     .structureContentChild {
         padding: 5%;
     }
+
+    .slider {
+        display: none;
+    }
 }

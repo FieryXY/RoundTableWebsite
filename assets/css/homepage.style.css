@@ -5,13 +5,14 @@
   
   /* Sets some basic properties for each description segment on the home page */
   .maininfo.description {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     opacity: 0;
     transition: opacity 1s;
+    max-width: 80%;
   }
   
  /* Sets margins for the left description segment */
@@ -56,6 +57,7 @@
   
   /* Ensures smooth transitions when Nav Bar opens and closes*/
 #siteContent {
+  
   transition-property: margin-left;
   transition-duration: 0.5s;
   margin-left: 0%;
@@ -68,12 +70,15 @@
   /* Sets the style for the main boxes at the center of the homepage */
   .column {
     background-color:#D0D0D0;
-    /*width: 80%;*/
+    width: 80%;
     margin-left: 10%;
     margin-right: 10%;
-    margin-bottom: 30rem;
+    margin-bottom: 5rem;
     padding: 10px;
     border-radius: 50px;
+
+    justify-content: center;
+    
   }
  
   /* Does something, not quite sure what. Apparently important for columns though */
@@ -126,6 +131,7 @@
     #siteContent.adjusted{
         margin-left: 0%;
       }
+
   }
 
 

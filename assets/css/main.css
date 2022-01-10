@@ -173,7 +173,8 @@
 /* Sets background image */
 .background {
     background-attachment: fixed;
-    background-image: url("../resources/background-image.jpg");
+    
+    background-color: rgb(20, 131, 179);
     background-size: cover;
 }
 
@@ -191,12 +192,11 @@
   
 /* Stylizes the header text*/
 .header_text {
-    display: inline-block;
-    color: #D0D0D0;
-    font-family: sans-serif;
-    font-size: 1em;
+    display: block;
+    font-size: 0.5em;
+    margin-top: 3em;
     text-align: center;
-    
+    font-weight: bold;
     margin-left: 10px;
     margin-right: 20px;
     
@@ -220,7 +220,8 @@
   }
   
   .header_text {
-    font-size: 5vw;
+      margin-top: 7em;
+    font-size: 0.5em;
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -235,16 +236,32 @@
   }
 }
 
-@media (max-width: 60rem) {
+@media (max-width: 800px) {
 
   .menubtn {
     font-size: 5vw;
   }
 
-  .navBar.open {
+  .navBar.openNav {
     width: 100%
   }
+
+  .closebtn {
+      font-size: 3rem;
+  }
+
   .dropbtn {
     font-size: 5vw;
+  }
+
+  .navContainer {
+      width: 3em;
+      height: 3em;
+  }
+
+  .header_text {
+      font-size: 0.3em;
+      margin-left: 10%;
+      margin-right: 10%;
   }
 }
