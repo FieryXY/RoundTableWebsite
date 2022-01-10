@@ -1,0 +1,29 @@
+.carousel-icon:hover {
+    color: var(--bs-primary);
+    font-size: 3.2rem;
+  }
+  
+  .carousel-icon {
+    transition: color 0.5s, font-size 0.5s;
+    color: black;
+    font-size: 3rem;
+  }
+  
+  .social_icon {
+    transition: font-size 0.5s, border-color 0.5s, color 0.5s;
+    border: 1px solid rgb(25,154,208);
+    color: rgb(25,154,208);
+    padding: 0.35em 0.4em;
+  }
+  
+  .social_icon:hover {
+    border-color: #1cb0ed;
+    color: #1cb0ed;
+  }
+
+  .parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
