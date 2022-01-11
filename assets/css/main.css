@@ -7,6 +7,7 @@
     border-radius: 25%;
     z-index: 9;
 }
+
 .menuIcon {
     background: #88CDDF;
     width: 100%;
@@ -81,7 +82,6 @@
     padding-top: 2.1rem;
 }
 
-
 .navBar.closedNav {
   width: 0%;
 }
@@ -121,6 +121,7 @@
     font-size: 2.6vw;
     text-align: right;
 }
+
 .dropbtn {
     background-color: #88CDDF;
     color: #363636;
@@ -136,7 +137,8 @@
     font-size: 1.3vw;
 }
 
-.dropbtn:hover, .dropbtn:focus {
+.dropbtn:hover,
+.dropbtn:focus {
     background-color: #70b1c2;
 }
 
@@ -151,7 +153,7 @@
     background-color: #88CDDF;
     min-width: 160px;
     overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -170,7 +172,9 @@
     display: block;
 }
 
+
 /* Sets background image */
+
 .background {
     background-attachment: fixed;
     
@@ -178,7 +182,9 @@
     background-size: cover;
 }
 
+
 /* Centers the header */
+
 .header {
     width: 100%;
     height: 15%;
@@ -189,8 +195,10 @@
     margin-bottom: 40px;
     font-size: 40px;
 }
-  
+
+
 /* Stylizes the header text*/
+
 .header_text {
     display: block;
     font-size: 0.5em;
@@ -199,16 +207,15 @@
     font-weight: bold;
     margin-left: 10px;
     margin-right: 20px;
-    
 }
-  
+
+
 /* Sets basic properties for logo */
-.header_logo{
+
+.header_logo {
     display: inline-block;
-  
     width: 1.5em;
     height: 1.5em;
-  
     margin-left: 0.5em;
     margin-right: 0.25em;
 }
