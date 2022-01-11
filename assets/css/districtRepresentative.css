@@ -2,12 +2,6 @@
 * {
     box-sizing: border-box;
 }
-/* Sets background color */
-.background {
-
-    background-attachment: fixed;
-    background-image: url("../resources/background-image.jpg");
-}
 /* Centers the header */
 .header {
     width: 100%;
