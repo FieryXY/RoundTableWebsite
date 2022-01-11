@@ -69,6 +69,7 @@
 }
 
 .navBar {
+    display: block;
     z-index: 10;
     overflow-x: hidden;
     top: 0;
@@ -81,12 +82,12 @@
     padding-top: 2.1rem;
 }
 
-.navBar.closed {
-    width: 0;
+.navBar.closedNav {
+  width: 0%;
 }
 
-.navBar.open {
-    width: 20%;
+.navBar.openNav {
+  width: 20%
 }
 
 .navBar a {
@@ -109,6 +110,7 @@
 }
 
 .closebtnDiv {
+    height: auto;
     margin-bottom: 2.8rem;
 }
 
@@ -116,7 +118,7 @@
     position: absolute;
     display: inline;
     right: 1.75rem;
-    font-size: 2.8rem;
+    font-size: 2.6vw;
     text-align: right;
 }
 
@@ -175,7 +177,8 @@
 
 .background {
     background-attachment: fixed;
-    background-image: url("../resources/background-image.jpg");
+    
+    background-color: rgb(20, 131, 179);
     background-size: cover;
 }
 
@@ -197,11 +200,11 @@
 /* Stylizes the header text*/
 
 .header_text {
-    display: inline-block;
-    color: #D0D0D0;
-    font-family: sans-serif;
-    font-size: 1em;
+    display: block;
+    font-size: 0.5em;
+    margin-top: 3em;
     text-align: center;
+    font-weight: bold;
     margin-left: 10px;
     margin-right: 20px;
 }
@@ -218,32 +221,54 @@
 }
 
 @media (max-width: 800px) {
-    .header {
-        flex-direction: column;
-        margin-top: 40px;
-    }
-    .header_text {
-        font-size: 5vw;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .header_logo {
-        width: 20vw;
-        height: 20vw;
-        margin-bottom: -15px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
+  .header{
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  
+  .header_text {
+      margin-top: 7em;
+    font-size: 0.5em;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .header_logo {
+    width: 20vw;
+    height: 20vw;
+  
+    margin-bottom: -15px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 @media (max-width: 800px) {
-    .menubtn {
-        font-size: 5vw;
-    }
-    .navBar.open {
-        width: 100%
-    }
-    .dropbtn {
-        font-size: 5vw;
-    }
+
+  .menubtn {
+    font-size: 5vw;
+  }
+
+  .navBar.openNav {
+    width: 100%
+  }
+
+  .closebtn {
+      font-size: 3rem;
+  }
+
+  .dropbtn {
+    font-size: 5vw;
+  }
+
+  .navContainer {
+      width: 3em;
+      height: 3em;
+  }
+
+  .header_text {
+      font-size: 0.3em;
+      margin-left: 10%;
+      margin-right: 10%;
+  }
 }
