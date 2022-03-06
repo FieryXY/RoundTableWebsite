@@ -39,11 +39,11 @@
 }
 
 .selected {
-    background-color: #689aa7;
+    background-color: #023047;
 }
 
 .selected:hover {
-    background-color: #70a5b3;
+    background-color: #033e5c;
 }
 
 .sliderContainer {
@@ -59,7 +59,7 @@
 .slider {
     position: relative;
     display: flex;
-    background: lightblue;
+    background: #8ecae6;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -80,8 +80,8 @@
     overflow-x: hidden;
     position: absolute;
     left: 0;
-   background: rgb(59, 171, 246);
-   color: #082c65;
+   background: #023047;
+   color: #8ecae6;
    height: 100%;
    width: 100%;
    transition: width 1s;
