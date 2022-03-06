@@ -35,11 +35,12 @@
 }
 
 .flexButton:hover {
-    background: rgb(58, 58, 59);;
+    background: rgb(58, 58, 59);
 }
 
 .selected {
     background-color: #023047;
+    color: #8ecae6;
 }
 
 .selected:hover {
